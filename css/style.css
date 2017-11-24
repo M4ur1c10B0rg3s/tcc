@@ -1,0 +1,46 @@
+.form-inline .form-control {
+  min-width: 190px;
+}
+
+@media (min-width: 576px){
+.form-inline .form-control {
+  width: 500px;
+}
+}
+
+.navbar-brand {
+  margin-right: 5rem;
+}
+
+p {
+  margin-bottom: 0.30rem;
+}
+
+.btn-outline-success {
+  color: #17a2b8;
+  border-color: #17a2b8;
+}
+
+.btn-outline-success:hover {
+  color: white;
+  background-color: #17a2b8;
+  border-color: #17a2b8;
+}
+
+.navbar {
+  padding: 1.2rem 2rem;
+}
+
+.firstSlide {
+  font-size: 1.75rem;
+  font-family: Azkia;
+}
+
+@font-face {
+  font-family: Azkia;
+  src: url("../fonts/Azkia.otf");
+}
+
+.carousel {
+
+}
