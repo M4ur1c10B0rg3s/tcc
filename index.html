@@ -6,37 +6,43 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <title>tcc</title>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+    <title>Find Pelotas</title>
 </head>
 <body>
 	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  		<p class="navbar-brand">Pelotas</p>
+  		<p class="navbar-brand">FIND PELOTAS</p>
   			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     			<span class="navbar-toggler-icon"></span>
   			</button>
   				<div class="collapse navbar-collapse" id="navbarSupportedContent">
     				<ul class="navbar-nav mr-auto">
-      					<li class="nav-item active">
-        					<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-      					</li>
       					<li class="nav-item">
-        					<a class="nav-link" href="#">Link</a>
+        					<a id="nav-home" class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
       					</li>
       					<li class="nav-item dropdown">
-        					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+        					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Locais</a>
         		<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          			<a class="dropdown-item" href="#">Action</a>
-          			<a class="dropdown-item" href="#">Another action</a>
-          		<div class="dropdown-divider"></div>
-          			<a class="dropdown-item" href="#">Something else here</a>
+                <a class="dropdown-item" href="#">Turismo</a>
+          			<a class="dropdown-item" href="#">Praças</a>
+          			<a class="dropdown-item" href="#">Futebol</a>
+          			<a class="dropdown-item" href="#">Lojas</a>
+                <a class="dropdown-item" href="#">Cinemas</a>
+                <a class="dropdown-item" href="#">Escolas</a>
+                <a class="dropdown-item" href="#">Saúde</a>
+                <a class="dropdown-item" href="#">Restaurantes</a>
+                <a class="dropdown-item" href="#">Lancherias</a>
+                <a class="dropdown-item" href="#">Bares</a>
+                <a class="dropdown-item" href="#">Festas e Eventos</a>
         		</div>
       					</li>
       					<li class="nav-item">
-        					<a class="nav-link" href="#">Disabled</a>
+        					<a id="nav-about" class="nav-link" href="#">Sobre</a>
      					 </li>
     				</ul>
     					<form class="form-inline my-2 my-lg-0">
-      						<input class="form-control mr-sm-2" type="search" placeholder="Pesquise" aria-label="Search">
+      						<input class="form-control mr-sm-2" type="search" placeholder="Exemplo: Bares, cinemas, escolas etc..." aria-label="Search">
       							<button class="btn btn-outline-success my-2 my-md-0" type="submit">Pesquisar</button>
     					</form>
   				</div>
@@ -44,42 +50,88 @@
 
 	<div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
   	<div class="carousel-inner">
-    <div class="carousel-item active">
-      	<img class="d-block w-100" src="imagens/caixadeagua.jpg" alt="Caixa D'Água">
-      	<div class="carousel-caption">
-    		<h1 class="firstSlide">Conheça melhor Pelotas</h1>
-    	</div>
+      <div class="carousel-item active">
+      	<img class="d-block w-100" src="imagens/caixadgua2.jpg" alt="Caixa D'Água">
+      </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="imagens/laranjal0.jpg" alt="Catedral Sâo Francisco De Paula">
     </div>
     <div class="carousel-item">
-      	<img class="d-block w-100" src="imagens/catedral.jpg" alt="Catedral Sâo Francisco De Paula">
-      	<div class="carousel-caption d-md-block">
-    		<h1 class="firstSlide">Conheça melhor Pelotas</h1>
-    	</div>
-    </div>
-    <!--<div class="carousel-item">
-      	<img class="d-block w-100" src="imagens/relogio.jpg" alt="Relógio mercado publico">
-      	<div class="carousel-caption d-none d-md-block">
-    		<h1 class="firstSlide">Conheça melhor Pelotas</h1>
-    	</div>
-    </div>
-    <div class="carousel-item">
-      	<img class="d-block w-100" src="imagens/shoppingpel.jpg" alt="Shopping Pelotas">
-      	<div class="carousel-caption d-none d-md-block">
-    		<h1 class="firstSlide">Conheça melhor Pelotas</h1>
-    	</div>
-    </div>
-    <div class="carousel-item">
-      	<img class="d-block w-100" src="imagens/laranjal1.jpg" alt="Praia do Laranjal">
-      	<div class="carousel-caption d-none d-md-block">
-    		<h1 class="firstSlide">Conheça melhor Pelotas</h1>
-    	</div>-->
+      <img class="d-block w-100" src="imagens/relogio2.jpg" alt="Relógio mercado publico">
     </div>
   	</div>
 	</div>
 
+  <div class="text-center">
+    <p class="intro">Com o <b>FIND PELOTAS</b> você pode encontrar e conhecer lugares de uma maneira fácil e rápida. 
+      Pesquise por pontos de seu interesse e 
+      saiba localização, hórarios e paginas oficiais para contato.
+    </p>
+  </div>
+
+  <div class="container">
+  <a href="#" class="cardLink">
+    <div class="card" style="width: 20rem;">
+      <img class="cardTurismo">
+    <div class="card-body">
+      <p class="card-text">Pontos Turisticos</p>
+    </div>
+    </div>
+  </a>
+
+  <a href="#" class="cardLink">
+    <div class="card" style="width: 20rem;">
+      <img class="cardLazer">
+    <div class="card-body">
+      <p class="card-text-lazer">Lazer</p>
+    </div>
+    </div>
+  </a>
+
+  <a href="#" class="cardLink">
+    <div class="card" style="width: 20rem; margin-right: 0px;">
+      <img class="cardRestaurantes">
+    <div class="card-body">
+      <p class="card-text">Restaurantes e bares</p>
+    </div>
+    </div>
+  </a>
+  </div>
+
+  <div class="about">
+    <p class="about-page">
+    <b>FIND PELOTAS</b> é um site que agrega informações de locais na cidade de Pelotas-RS.
+    Assim o visitante pode pesquisar por locais de seu interesse e saber sua localização, hórarios, entre outras informações
+    de uma maneira simples, facíl e prática. O site é feito por um estudante de programação, por isso o site pode ter alguns
+    defeitos e problemas, o site passara por mudanças conforme o tempo, localizações novas serão adicionadas e algumas serão
+    retiradas. Sempre tentando manter o mais atualizado possivel. Qualquer informações que possam ajudar o site serão bem-vindas!
+    Para entrar em contato redes sociais estão no fim do site a direita.
+      <br>
+      <br>
+      <br><b class="about-say">-Se alguém tivesse me falado que software diz respeito à humanidade. Que é algo para ajudar as pessoas com tecnologia de computador,
+      teria mudado minha visâo muito antes.</b>
+    </p>
+  </div>
+
+  <footer class="footer">
+    <div class="inside-logo">
+      <a href="#">
+        <div class="fb-logo">
+        </div>
+      </a>
+      <a href="#">
+        <div class="tw-logo">
+        </div>
+      </a>
+      <a href="#">
+        <div class="gmail-logo">
+        </div>
+      </a>
+    </div>
+    <h3 class="footer-text-title">FIND PELOTAS</h3>
+  </footer>
+
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.8.2/umd/popper.js"></script>
-	<script type="text/javascript" src="js/jquery.min.js"></script>
-	<script type="text/javascript" src="js/bootstrap.min.js"></script>
-	<script type="text/javascript" src="js/script.js"></script>
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
 </body>
 </html>
