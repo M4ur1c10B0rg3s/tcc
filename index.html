@@ -24,7 +24,7 @@
       					<li class="nav-item dropdown">
         					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Locais</a>
         		<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">Turismo</a>
+                <a id="dropdown-turismo" class="dropdown-item" href="#">Turismo</a>
           			<a class="dropdown-item" href="#">Praças</a>
           			<a class="dropdown-item" href="#">Futebol</a>
           			<a class="dropdown-item" href="#">Lojas</a>
@@ -43,24 +43,16 @@
     				</ul>
     					<form class="form-inline my-2 my-lg-0">
       						<input class="form-control mr-sm-2" type="search" placeholder="Exemplo: Bares, cinemas, escolas etc..." aria-label="Search">
-      							<button class="btn btn-outline-success my-2 my-md-0" type="submit">Pesquisar</button>
+      							<button id="btPesquisar" class="btn btn-outline-success my-2 my-md-0" type="submit">Pesquisar</button>
     					</form>
   				</div>
 	</nav>
 
-	<div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
-  	<div class="carousel-inner">
-      <div class="carousel-item active">
-      	<img class="d-block w-100" src="imagens/caixadgua2.jpg" alt="Caixa D'Água">
-      </div>
-    <div class="carousel-item">
-      <img class="d-block w-100" src="imagens/laranjal0.jpg" alt="Catedral Sâo Francisco De Paula">
-    </div>
-    <div class="carousel-item">
-      <img class="d-block w-100" src="imagens/relogio2.jpg" alt="Relógio mercado publico">
-    </div>
-  	</div>
-	</div>
+  <div class="header">
+    <video class="bg-video" autoplay muted loop="true">
+      <source class="video" src="imagens/pelotas_video.mp4" type="video/mp4">
+    </video>
+  </div>
 
   <div class="text-center">
     <p class="intro">Com o <b>FIND PELOTAS</b> você pode encontrar e conhecer lugares de uma maneira fácil e rápida. 
@@ -71,7 +63,7 @@
 
   <div class="container">
   <a href="#" class="cardLink">
-    <div class="card" style="width: 20rem;">
+    <div id="pontosTuristicos" class="card" style="width: 20rem; height: 285px;">
       <img class="cardTurismo">
     <div class="card-body">
       <p class="card-text">Pontos Turisticos</p>
@@ -80,7 +72,7 @@
   </a>
 
   <a href="#" class="cardLink">
-    <div class="card" style="width: 20rem;">
+    <div class="card" style="width: 20rem; height: 285px;">
       <img class="cardLazer">
     <div class="card-body">
       <p class="card-text-lazer">Lazer</p>
@@ -89,7 +81,7 @@
   </a>
 
   <a href="#" class="cardLink">
-    <div class="card" style="width: 20rem; margin-right: 0px;">
+    <div class="card" style="width: 20rem; margin-right: 0px; height: 285px;">
       <img class="cardRestaurantes">
     <div class="card-body">
       <p class="card-text">Restaurantes e bares</p>
@@ -113,17 +105,431 @@
     </p>
   </div>
 
+  <div class="pontos-turisticos">
+    <div id="card-turismo" class="card" style="width: 21rem;">
+      <img class="card-img-top" src="imagens/mercado.jpg" alt="Mercado publico">
+      <h4 class="card-title">Mercado Central</h4>
+        <div class="card-body">
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">Praça Sete de Julho, 179 - Centro, Pelotas - RS, 96020-010</li>
+            <li class="list-group-item"><b>segunda-feira</b> 08:00–19:00<br>
+                                        <b>terça-feira</b> 08:00–19:00<br>
+                                        <b>quarta-feira</b> 08:00–19:00<br>
+                                        <b>quinta-feira</b> 08:00–19:00<br>
+                                        <b>sexta-feira</b> 08:00–19:00<br>
+                                        <b>sábado</b> 08:00–18:00<br>
+                                        <b>domingo</b> Fechado</li>
+            <li class="list-group-item"><b>Telefone:</b> (53) 3225-3733</li>
+          </ul>
+        </div>
+    </div>
+    <div id="card-turismo" class="card" style="width: 21rem;">
+      <img class="card-img-top" src="imagens/baronesa2.jpg" alt="Museu da baronesa">
+      <h4 class="card-title">Museu da Baronesa</h4>
+        <div class="card-body">
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">Av. Domingos de Almeida, 1490 - Areal, Pelotas - RS, 96085-470</li>
+            <li class="list-group-item"><b>segunda-feira</b> 13:30-17:45<br>
+                                        <b>terça-feira</b> 08:00–19:00<br>
+                                        <b>quarta-feira</b> 08:00–19:00<br>
+                                        <b>quinta-feira</b> 08:00–19:00<br>
+                                        <b>sexta-feira</b> 08:00–19:00<br>
+                                        <b>sábado</b> 08:00–18:00<br>
+                                        <b>domingo</b> Fechado</li>
+            <li class="list-group-item"><b>Telefone:</b> (53) 3228-4606</li>
+          </ul>
+        </div>
+    </div>
+    <div id="card-turismo" class="card" style="width: 21rem;">
+      <img class="card-img-top" src="imagens/pracaCoronel.jpg" alt="Praça Coronel Pedro Osório">
+      <h4 class="card-title">Praça Coronel Predo Osório</h4>
+        <div class="card-body">
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">R. Quinze de Novembro - Centro, Pelotas - RS, 96010-150</li>
+            <li class="list-group-item"><b>segunda-feira</b> Atendimento 24 horas<br>
+                                        <b>terça-feira</b> Atendimento 24 horas<br>
+                                        <b>quarta-feira</b> Atendimento 24 horas<br>
+                                        <b>quinta-feira</b> Atendimento 24 horas<br>
+                                        <b>sexta-feira</b> Atendimento 24 horas<br>
+                                        <b>sábado</b> Atendimento 24 horas<br>
+                                        <b>domingo</b> Atendimento 24 horas</li>
+            <li class="list-group-item"><b>Telefone:</b> (53) 3309-6000</li>
+          </ul>
+        </div>
+    </div>
+    <div id="card-turismo" class="card" style="width: 21rem; margin-right: 0;">
+      <img class="card-img-top" src="imagens/teatroGuarany.jpg" alt="Teatro Guarany">
+      <h4 class="card-title">Teatro Guarany</h4>
+        <div class="card-body">
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">R. Lôbo da Costa, 849 - Centro, Pelotas - RS, 96010-150</li>
+            <li class="list-group-item"><b>segunda-feira</b> 08:00-18:00<br>
+                                        <b>terça-feira</b> 08:00–18:00<br>
+                                        <b>quarta-feira</b> 08:00–18:00<br>
+                                        <b>quinta-feira</b> 08:00–18:00<br>
+                                        <b>sexta-feira</b> 08:00–18:00<br>
+                                        <b>sábado</b> 08:00-11:00<br>
+                                        <b>domingo</b> Fechado</li>
+            <li class="list-group-item"><b>Telefone:</b> (53) 3225-7636</li>
+          </ul>
+        </div>
+    </div>
+    <div id="card-turismo" class="card" style="width: 21rem; margin-top: 50px;">
+      <img class="card-img-top" src="imagens/catedral.jpg" alt="Catedral Metropolitana São Francisco de Paula">
+      <h4 class="card-title">Catedral Metropolitana São Francisco de Paula</h4>
+        <div class="card-body">
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">Praça José Bonifácio, 15 - Centro, Pelotas - RS, 96015-170</li>
+            <li class="list-group-item"><b>segunda-feira</b> 08:00-18:00<br>
+                                        <b>terça-feira</b> 08:00–18:00<br>
+                                        <b>quarta-feira</b> 08:00–18:00<br>
+                                        <b>quinta-feira</b> 08:00–18:00<br>
+                                        <b>sexta-feira</b> 08:00–18:00<br>
+                                        <b>sábado</b> 08:00-11:00<br>
+                                        <b>domingo</b> Fechado</li>
+            <li class="list-group-item"><b>Telefone:</b> (53) 3222-2096</li>
+          </ul>
+        </div>
+    </div>
+    <div id="card-turismo" class="card" style="width: 21rem; margin-top: 50px;">
+      <img class="card-img-top" src="imagens/GrandeHotel.jpg" alt="Grande Hotel">
+      <h4 class="card-title">Grande Hotel</h4>
+        <div class="card-body">
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">R. Lôbo da Costa, 51 - Centro, Pelotas - RS, 96010-150</li>
+            <li class="list-group-item"><b>segunda-feira</b><br>
+                                        <b>terça-feira</b><br>
+                                        <b>quarta-feira</b><br>
+                                        <b>quinta-feira</b><br>
+                                        <b>sexta-feira</b><br>
+                                        <b>sábado</b><br>
+                                        <b>domingo</b></li>
+            <li class="list-group-item"><b>Telefone:</b> (53) 3225-1998</li>
+          </ul>
+        </div>
+    </div>
+    <div id="card-turismo" class="card" style="width: 21rem; margin-top: 50px;">
+      <img class="card-img-top" src="imagens/biblioteca.jpg" alt="Biblioteca Publica">
+      <h4 class="card-title">Biblioteca Pública</h4>
+        <div class="card-body">
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">Praça Cel. Pedro Osório, 103 - Centro, Pelotas - RS, 96010-150</li>
+            <li class="list-group-item"><b>segunda-feira</b> 09:00-18:00<br>
+                                        <b>terça-feira</b> 09:00–18:00<br>
+                                        <b>quarta-feira</b> 09:00–18:00<br>
+                                        <b>quinta-feira</b> 09:00–18:00<br>
+                                        <b>sexta-feira</b> 09:00–18:00<br>
+                                        <b>sábado</b> Fechado<br>
+                                        <b>domingo</b> Fechado</li>
+            <li class="list-group-item"><b>Telefone:</b> (53) 3222-3856</li>
+          </ul>
+        </div>
+    </div>
+    <div id="card-turismo" class="card" style="width: 21rem; margin-right: 0; margin-top: 50px;">
+      <img class="card-img-top" src="imagens/igrejaCabeluda.jpg" alt="Catedral do Redentor - Igreja Cabeluda">
+      <h4 class="card-title">Catedral do Redentor - Igreja Cabeluda</h4>
+        <div class="card-body">
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">R. Gen. Téles, 711 - Centro, Pelotas - RS, 96010-165</li>
+            <li class="list-group-item"><b>segunda-feira</b> 13:30-17:30<br>
+                                        <b>terça-feira</b> 13:30-17:30<br>
+                                        <b>quarta-feira</b> 13:30-17:30<br>
+                                        <b>quinta-feira</b> 13:30-17:30<br>
+                                        <b>sexta-feira</b> 13:30-17:30<br>
+                                        <b>sábado</b> Fechado<br>
+                                        <b>domingo</b> 9:30-12:00</li>
+            <li class="list-group-item"><b>Telefone:</b> (53) 3222-5679</li>
+          </ul>
+        </div>
+    </div>
+    <div id="card-turismo" class="card" style="width: 21rem; margin-top: 50px;">
+      <img class="card-img-top" src="imagens/charqueadasSJ.jpg" alt="Charqueadas São João">
+      <h4 class="card-title">Charqueadas São João</h4>
+        <div class="card-body">
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">Estrada da Costa, 750, Pelotas - RS, 96085-100</li>
+            <li class="list-group-item"><b>segunda-feira</b> 09:00-18:00<br>
+                                        <b>terça-feira</b> 09:00–18:00<br>
+                                        <b>quarta-feira</b> 09:00–18:00<br>
+                                        <b>quinta-feira</b> 09:00–18:00<br>
+                                        <b>sexta-feira</b> 09:00–18:00<br>
+                                        <b>sábado</b> 08:00-11:00<br>
+                                        <b>domingo</b> 14:00-18:00</li>
+            <li class="list-group-item"><b>Telefone:</b> (53) 3228-2425</li>
+          </ul>
+        </div>
+    </div>
+    <div id="card-turismo" class="card" style="width: 21rem; margin-top: 50px;">
+      <img class="card-img-top" src="imagens/casteloSL.jpg" alt="Castelo Simões Lopes">
+      <h4 class="card-title">Castelo Simões Lopes</h4>
+        <div class="card-body">
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">Av. Brasil, 824 - Fragata, Pelotas - RS, 96025-000</li>
+            <li class="list-group-item"><b>segunda-feira</b> Atendimento 24 horas<br>
+                                        <b>terça-feira</b> Atendimento 24 horas<br>
+                                        <b>quarta-feira</b> Atendimento 24 horas<br>
+                                        <b>quinta-feira</b> Atendimento 24 horas<br>
+                                        <b>sexta-feira</b> Atendimento 24 horas<br>
+                                        <b>sábado</b> Atendimento 24 horas<br>
+                                        <b>domingo</b> Atendimento 24 horas</li>
+            <li class="list-group-item"><b>Telefone:</b></li>
+          </ul>
+        </div>
+    </div>
+    <div id="card-turismo" class="card" style="width: 21rem; margin-top: 50px;">
+      <img class="card-img-top" src="imagens/laranjal.jpg" alt="Laranjal">
+      <h4 class="card-title">Praia do Laranjal</h4>
+        <div class="card-body">
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">Praia do Laranjal</li>
+            <li class="list-group-item"><b>segunda-feira</b> Atendimento 24 horas<br>
+                                        <b>terça-feira</b> Atendimento 24 horas<br>
+                                        <b>quarta-feira</b> Atendimento 24 horas<br>
+                                        <b>quinta-feira</b> Atendimento 24 horas<br>
+                                        <b>sexta-feira</b> Atendimento 24 horas<br>
+                                        <b>sábado</b> Atendimento 24 horas<br>
+                                        <b>domingo</b> Atendimento 24 horas</li>
+            <li class="list-group-item"><b>Telefone:</b> </li>
+          </ul>
+        </div>
+    </div>
+    <div id="card-turismo" class="card" style="width: 21rem; margin-right: 0; margin-top: 50px;">
+      <img class="card-img-top" src="imagens/barroDuro.jpg" alt="Praia Do Barro Duro">
+      <h4 class="card-title">Praia Do Barro Duro</h4>
+        <div class="card-body">
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">789, Av. Minas Gerais, 583 - Laranjal, Pelotas - RS, 96095-180</li>
+            <li class="list-group-item"><b>segunda-feira</b> Atendimento 24 horas<br>
+                                        <b>terça-feira</b> Atendimento 24 horas<br>
+                                        <b>quarta-feira</b> Atendimento 24 horas<br>
+                                        <b>quinta-feira</b> Atendimento 24 horas<br>
+                                        <b>sexta-feira</b> Atendimento 24 horas<br>
+                                        <b>sábado</b> Atendimento 24 horas<br>
+                                        <b>domingo</b> Atendimento 24 horas</li>
+            <li class="list-group-item"><b>Telefone:</b></li>
+          </ul>
+        </div>
+    </div>
+    <div id="card-turismo" class="card" style="width: 21rem; margin-top: 50px;">
+      <img class="card-img-top" src="imagens/museuDoDoce.jpg" alt="Museu do Doce">
+      <h4 class="card-title">Museu do Doce - UFPel</h4>
+        <div class="card-body">
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">Praça Cel. Pedro Osório, Casarão 8 - Centro, Pelotas - RS, 96015-010</li>
+            <li class="list-group-item"><b>segunda-feira</b> 14:00-17:30<br>
+                                        <b>terça-feira</b> 14:00-17:30<br>
+                                        <b>quarta-feira</b> 14:00-17:30<br>
+                                        <b>quinta-feira</b> 14:00-17:30<br>
+                                        <b>sexta-feira</b> 14:00-17:30<br>
+                                        <b>sábado</b> 14:00-17:30<br>
+                                        <b>domingo</b> 14:00-17:30</li>
+            <li class="list-group-item"><b>Telefone:</b> (53) 3921-6291</li>
+          </ul>
+        </div>
+    </div>
+    <div id="card-turismo" class="card" style="width: 21rem; margin-top: 50px;">
+      <img class="card-img-top" src="imagens/museuDeArteLG.jpg" alt="Museu de Arte Leopoldo Gotuzzo">
+      <h4 class="card-title">Museu de Arte Leopoldo Gotuzzo</h4>
+        <div class="card-body">
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">R. Gen. Osório, 725 - Centro, Pelotas - RS, 96020-000</li>
+            <li class="list-group-item"><b>segunda-feira</b> <br>
+                                        <b>terça-feira</b> <br>
+                                        <b>quarta-feira</b> <br>
+                                        <b>quinta-feira</b> <br>
+                                        <b>sexta-feira</b> <br>
+                                        <b>sábado</b> <br>
+                                        <b>domingo</b> </li>
+            <li class="list-group-item"><b>Telefone:</b> (53) 3225-9144</li>
+          </ul>
+        </div>
+    </div>
+    <div id="card-turismo" class="card" style="width: 21rem; margin-top: 50px;">
+      <img class="card-img-top" src="imagens/museuCarlosRitter.jpg" alt="Museu de Ciências Naturais Carlos Ritter">
+      <h4 class="card-title">Museu de Ciências Naturais Carlos Ritter</h4>
+        <div class="card-body">
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">R. Barão de Santa Tecla, 576 - Centro, Pelotas - RS, 96010-140</li>
+            <li class="list-group-item"><b>segunda-feira</b> 09:00-16:00<br>
+                                        <b>terça-feira</b> 09:00-16:00<br>
+                                        <b>quarta-feira</b> 09:00-16:00<br>
+                                        <b>quinta-feira</b> 09:00-16:00<br>
+                                        <b>sexta-feira</b> 09:00-16:00<br>
+                                        <b>sábado</b> Fechado<br>
+                                        <b>domingo</b> Fechado</li>
+            <li class="list-group-item"><b>Telefone:</b> (53) 3222-0880</li>
+          </ul>
+        </div>
+    </div>
+    <div id="card-turismo" class="card" style="width: 21rem; margin-right: 0; margin-top: 50px;">
+      <img class="card-img-top" src="imagens/parqueDom.jpg" alt="Praia Do Barro Duro">
+      <h4 class="card-title" style="margin-left: 10px">Parque Dom Antônio Zattera</h4>
+        <div class="card-body">
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">Av. Bento Gonçalves, 3568-3678 - Porto, Pelotas - RS, 96015-140</li>
+            <li class="list-group-item"><b>segunda-feira</b> Atendimento 24 horas<br>
+                                        <b>terça-feira</b> Atendimento 24 horas<br>
+                                        <b>quarta-feira</b> Atendimento 24 horas<br>
+                                        <b>quinta-feira</b> Atendimento 24 horas<br>
+                                        <b>sexta-feira</b> Atendimento 24 horas<br>
+                                        <b>sábado</b> Atendimento 24 horas<br>
+                                        <b>domingo</b> Atendimento 24 horas</li>
+            <li class="list-group-item"><b>Telefone:</b></li>
+          </ul>
+        </div>
+    </div>
+    </div>
+
+    <div class="restaurantes-bares">
+      <div id="card-turismo" class="card" style="width: 21rem;">
+      <img class="card-img-top" src="imagens/mcdonalds1.jpg" alt="McDonald's">
+      <h4 class="card-title">McDonald's</h4>
+        <div class="card-body">
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">Av. Bento Gonçalves, 3214 - Centro, Pelotas - RS, 96015-140</li>
+            <li class="list-group-item"><b>segunda-feira</b> 11:00–23:00<br>
+                                        <b>terça-feira</b> 11:00–23:00<br>
+                                        <b>quarta-feira</b> 11:00–23:00<br>
+                                        <b>quinta-feira</b> 11:00–23:00<br>
+                                        <b>sexta-feira</b> 11:00–23:00<br>
+                                        <b>sábado</b> 11:00–23:00<br>
+                                        <b>domingo</b> 11:00–23:00</li>
+            <li class="list-group-item"><b>Telefone:</b> (53) 3227-6055</li>
+          </ul>
+        </div>
+    </div>
+    <div id="card-turismo" class="card" style="width: 21rem;">
+      <img class="card-img-top" src="imagens/cafepontocom.jpg" alt="Cafe.com">
+      <h4 class="card-title">Cafe.Com</h4>
+        <div class="card-body">
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">R. Quinze de Novembro, 709 - Centro, Pelotas - RS, 96015-000</li>
+            <li class="list-group-item"><b>segunda-feira</b> 07:30-22:30<br>
+                                        <b>terça-feira</b> 07:30-22:30<br>
+                                        <b>quarta-feira</b> 07:30-22:30<br>
+                                        <b>quinta-feira</b> 07:30-22:30<br>
+                                        <b>sexta-feira</b> 07:30-22:30<br>
+                                        <b>sábado</b> 07:30–15:00<br>
+                                        <b>domingo</b> Fechado</li>
+            <li class="list-group-item"><b>Telefone:</b> (53) 3225-1499</li>
+          </ul>
+        </div>
+    </div>
+    <div id="card-turismo" class="card" style="width: 21rem;">
+      <img class="card-img-top" src="imagens/cafeaquarius.jpg" alt="Café Aquários">
+      <h4 class="card-title">Café Aquários</h4>
+        <div class="card-body">
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">R. Quinze de Novembro, 602 - Centro, Pelotas - RS, 96015-000</li>
+            <li class="list-group-item"><b>segunda-feira</b> 07:00-21:00<br>
+                                        <b>terça-feira</b> 07:00-21:00<br>
+                                        <b>quarta-feira</b> 07:00-21:00<br>
+                                        <b>quinta-feira</b> 07:00-21:00<br>
+                                        <b>sexta-feira</b> 07:00-21:00<br>
+                                        <b>sábado</b> 07:00-21:00<br>
+                                        <b>domingo</b> 07:00-21:00</li>
+            <li class="list-group-item"><b>Telefone:</b> (53) 3222-6544</li>
+          </ul>
+        </div>
+    </div>
+    <div id="card-turismo" class="card" style="width: 21rem; margin-right: 0;">
+      <img class="card-img-top" src="imagens/picanhaExpress.jpg" alt="Picanha Express">
+      <h4 class="card-title">Picanha Express</h4>
+        <div class="card-body">
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">R. Quinze de Novembro, 732 - Centro, Pelotas - RS, 96015-000</li>
+            <li class="list-group-item"><b>segunda-feira</b> 11:00-14:30<br>
+                                        <b>terça-feira</b> 11:00-14:30<br>
+                                        <b>quarta-feira</b> 11:00-14:30<br>
+                                        <b>quinta-feira</b> 11:00-14:30<br>
+                                        <b>sexta-feira</b> 11:00-14:30<br>
+                                        <b>sábado</b> 11:00-14:30<br>
+                                        <b>domingo</b> Fechado</li>
+            <li class="list-group-item"><b>Telefone:</b> (53) 3305-3186</li>
+          </ul>
+        </div>
+    </div>
+    <div id="card-turismo" class="card" style="width: 21rem; margin-top: 50px;">
+      <img class="card-img-top" src="imagens/otto.jpg" alt="Confeitaria Otto">
+      <h4 class="card-title">Confeitaria Otto</h4>
+        <div class="card-body">
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">R. 7 de Setembro, 304 - Centro, Pelotas - RS, 96015-300</li>
+            <li class="list-group-item"><b>segunda-feira</b> 09:00–19:30<br>
+                                        <b>terça-feira</b> 09:00–19:30<br>
+                                        <b>quarta-feira</b> 09:00–19:30<br>
+                                        <b>quinta-feira</b> 09:00–19:30<br>
+                                        <b>sexta-feira</b> 09:00–19:30<br>
+                                        <b>sábado</b> 09:00–18:00<br>
+                                        <b>domingo</b> Fechado</li>
+            <li class="list-group-item"><b>Telefone:</b> (53) 3225-7836</li>
+          </ul>
+        </div>
+    </div>
+    <div id="card-turismo" class="card" style="width: 21rem; margin-top: 50px;">
+      <img class="card-img-top" src="imagens/allesBlau.jpg" alt="Alles Blau">
+      <h4 class="card-title">Alles Blau</h4>
+        <div class="card-body">
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">R. 7 de Setembro, 354 - Centro, Pelotas - RS, 96015-300</li>
+            <li class="list-group-item"><b>segunda-feira</b> Sempre aberto<br>
+                                        <b>terça-feira</b> Sempre aberto<br>
+                                        <b>quarta-feira</b> Sempre aberto<br>
+                                        <b>quinta-feira</b> Sempre aberto<br>
+                                        <b>sexta-feira</b> Sempre aberto<br>
+                                        <b>sábado</b> Sempre aberto<br>
+                                        <b>domingo</b> Sempre aberto</li>
+            <li class="list-group-item"><b>Telefone:</b> (53) 3222-2223</li>
+          </ul>
+        </div>
+    </div>
+    <div id="card-turismo" class="card" style="width: 21rem; margin-top: 50px;">
+      <img class="card-img-top" src="imagens/churrascaria-lobao.jpg" alt="Churrascaria Lobão">
+      <h4 class="card-title">Churrascaria Lobão</h4>
+        <div class="card-body">
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">Av. Bento Gonçalves, 3460 - Centro, Pelotas - RS, 96015-140</li>
+            <li class="list-group-item"><b>segunda-feira</b> Fechado<br>
+                                        <b>terça-feira</b> 11:30–14:30, 19:00–00:00<br>
+                                        <b>quarta-feira</b> 11:30–14:30, 19:00–00:00<br>
+                                        <b>quinta-feira</b> 11:30–14:30, 19:00–00:00<br>
+                                        <b>sexta-feira</b> 11:30–14:30, 19:00–00:00<br>
+                                        <b>sábado</b> 11:30–14:30, 19:00–00:00<br>
+                                        <b>domingo</b> 11:30–14:30, 19:00–00:00</li>
+            <li class="list-group-item"><b>Telefone:</b> (53) 3225-6197</li>
+          </ul>
+        </div>
+    </div>
+    <div id="card-turismo" class="card" style="width: 21rem; margin-right: 0; margin-top: 50px;">
+      <img class="card-img-top" src="imagens/cantinaBento.jpg" alt="Cantina da Bento">
+      <h4 class="card-title">Cantina da Bento</h4>
+        <div class="card-body">
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">Av. Bento Gonçalves, 4153 - Colina do Sol, Pelotas - RS, 96015-140</li>
+            <li class="list-group-item"><b>segunda-feira</b> 00:00–12:00, 19:30–00:00<br>
+                                        <b>terça-feira</b> 00:00–12:00, 19:30–00:00<br>
+                                        <b>quarta-feira</b> 00:00–12:00, 19:30–00:00<br>
+                                        <b>quinta-feira</b> 00:00–12:00, 19:30–00:00<br>
+                                        <b>sexta-feira</b> 00:00–12:00, 19:30–00:00<br>
+                                        <b>sábado</b> 00:00–12:00, 19:30–00:00<br>
+                                        <b>domingo</b> 00:00–12:00, 19:30–00:00</li>
+            <li class="list-group-item"><b>Telefone:</b> (53) 3272-3634</li>
+          </ul>
+        </div>
+    </div>
+    </div>
+
   <footer class="footer">
     <div class="inside-logo">
-      <a href="#">
+      <a href="https://www.facebook.com/mauricio.borges.524">
         <div class="fb-logo">
         </div>
       </a>
-      <a href="#">
+      <a href="https://twitter.com/M4urcioBorg3s">
         <div class="tw-logo">
         </div>
       </a>
-      <a href="#">
+      <a href="https://outlook.live.com/mail/#/inbox/id/AQQkADAwATdiZmYAZC04NDIzLTljNWItMDACLTAwCgAQAPautYoGEXRDnbdB6hNgo7s%3D">
         <div class="gmail-logo">
         </div>
       </a>
