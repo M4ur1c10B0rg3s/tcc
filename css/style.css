@@ -350,6 +350,26 @@ p {
   display: none;
 }
 
+.cinemas {
+  width: 1500px;
+  height: 660px;
+  margin: 150px auto;
+  display: none;
+}
+
+.card-img-top-cineflix {
+  height: 470px;
+}
+
+.card-img-top-cineart {
+  height: 470px;
+}
+
+#card-cinema {
+  border: 1px solid #E0E0E0;
+  height: 660px;
+}
+
 
 
 

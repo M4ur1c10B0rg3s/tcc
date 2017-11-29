@@ -6,6 +6,7 @@ $(document).ready(function(){
            $(".about").show();
             $(".pontos-turisticos").hide();
              $(".restaurantes-bares").hide();
+              $(".cinemas").hide();
     });
 
     $("#nav-home").click(function(){
@@ -15,6 +16,7 @@ $(document).ready(function(){
            $(".about").hide();
             $(".pontos-turisticos").hide();
              $(".restaurantes-bares").hide();
+              $(".cinemas").hide();
     });
 
     $("#dropdown-turismo").click(function(){
@@ -24,6 +26,7 @@ $(document).ready(function(){
            $(".about").hide();
             $(".pontos-turisticos").show();
              $(".restaurantes-bares").hide();
+              $(".cinemas").hide();
     });
 
     $("#pontosTuristicos").click(function(){
@@ -33,6 +36,7 @@ $(document).ready(function(){
            $(".about").hide();
             $(".pontos-turisticos").show();
              $(".restaurantes-bares").hide();
+              $(".cinemas").hide();
     });
 
     $("#dropdown-restaurantes").click(function(){
@@ -42,6 +46,7 @@ $(document).ready(function(){
            $(".about").hide();
             $(".pontos-turisticos").hide();
              $(".restaurantes-bares").show();
+              $(".cinemas").hide();
     });
 
     $("#card-restaurantes").click(function(){
@@ -51,5 +56,16 @@ $(document).ready(function(){
            $(".about").hide();
             $(".pontos-turisticos").hide();
              $(".restaurantes-bares").show();
+              $(".cinemas").hide();
+    });
+
+    $("#dropdown-cinemas").click(function(){
+        $(".header").hide();
+         $(".text-center").hide();
+          $(".container").hide();
+           $(".about").hide();
+            $(".pontos-turisticos").hide();
+             $(".restaurantes-bares").hide();
+              $(".cinemas").show();
     });
 });
