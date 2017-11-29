@@ -345,8 +345,9 @@ p {
 
 .restaurantes-bares {
   width: 1524px;
-  height: 1160px;
+  height: 3350px;
   margin: 150px auto;
+  display: none;
 }
 
 

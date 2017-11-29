@@ -25,14 +25,13 @@
         					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Locais</a>
         		<div class="dropdown-menu" aria-labelledby="navbarDropdown">
                 <a id="dropdown-turismo" class="dropdown-item" href="#">Turismo</a>
-          			<a class="dropdown-item" href="#">Praças</a>
-          			<a class="dropdown-item" href="#">Futebol</a>
-          			<a class="dropdown-item" href="#">Lojas</a>
+          			<a class="dropdown-item" href="#">Esportes</a>
                 <a class="dropdown-item" href="#">Cinemas</a>
                 <a class="dropdown-item" href="#">Escolas</a>
                 <a class="dropdown-item" href="#">Saúde</a>
-                <a class="dropdown-item" href="#">Restaurantes</a>
+                <a id="dropdown-restaurantes" class="dropdown-item" href="#">Restaurantes</a>
                 <a class="dropdown-item" href="#">Lancherias</a>
+                <a class="dropdown-item" href="#">Pizzarias</a>
                 <a class="dropdown-item" href="#">Bares</a>
                 <a class="dropdown-item" href="#">Festas e Eventos</a>
         		</div>
@@ -81,10 +80,10 @@
   </a>
 
   <a href="#" class="cardLink">
-    <div class="card" style="width: 20rem; margin-right: 0px; height: 285px;">
+    <div id="card-restaurantes" class="card" style="width: 20rem; margin-right: 0px; height: 285px;">
       <img class="cardRestaurantes">
     <div class="card-body">
-      <p class="card-text">Restaurantes e bares</p>
+      <p class="card-text" style="margin-left: 95px;">Restaurantes</p>
     </div>
     </div>
   </a>
@@ -501,19 +500,223 @@
         </div>
     </div>
     <div id="card-turismo" class="card" style="width: 21rem; margin-right: 0; margin-top: 50px;">
-      <img class="card-img-top" src="imagens/cantinaBento.jpg" alt="Cantina da Bento">
-      <h4 class="card-title">Cantina da Bento</h4>
+      <img class="card-img-top" src="imagens/cruz-de-malta.jpg" alt="Cruz de Malta">
+      <h4 class="card-title">Cruz de Malta</h4>
         <div class="card-body">
           <ul class="list-group list-group-flush">
-            <li class="list-group-item">Av. Bento Gonçalves, 4153 - Colina do Sol, Pelotas - RS, 96015-140</li>
-            <li class="list-group-item"><b>segunda-feira</b> 00:00–12:00, 19:30–00:00<br>
-                                        <b>terça-feira</b> 00:00–12:00, 19:30–00:00<br>
-                                        <b>quarta-feira</b> 00:00–12:00, 19:30–00:00<br>
-                                        <b>quinta-feira</b> 00:00–12:00, 19:30–00:00<br>
-                                        <b>sexta-feira</b> 00:00–12:00, 19:30–00:00<br>
-                                        <b>sábado</b> 00:00–12:00, 19:30–00:00<br>
-                                        <b>domingo</b> 00:00–12:00, 19:30–00:00</li>
-            <li class="list-group-item"><b>Telefone:</b> (53) 3272-3634</li>
+            <li class="list-group-item"> Parque Dom Antônio Zattera, 143 - Centro, Pelotas - RS, 96015-180</li>
+            <li class="list-group-item"><b>segunda-feira</b> 11:00–14:00, 19:00–23:30<br>
+                                        <b>terça-feira</b> 11:00–14:00, 19:00–23:30<br>
+                                        <b>quarta-feira</b> 11:00–14:00, 19:00–23:30<br>
+                                        <b>quinta-feira</b> 11:00–14:00, 19:00–23:30<br>
+                                        <b>sexta-feira</b> 11:00–14:00, 19:00–23:30<br>
+                                        <b>sábado</b> 11:00–14:00, 19:00–23:30<br>
+                                        <b>domingo</b> 11:00–14:00, 19:00–23:30</li>
+            <li class="list-group-item"><b>Telefone:</b> (53) 3028-6835</li>
+          </ul>
+        </div>
+    </div>
+    <div id="card-turismo" class="card" style="width: 21rem; margin-top: 50px;">
+      <img class="card-img-top" src="imagens/el-paisano.jpg" alt="Parrillada El Paisano">
+      <h4 class="card-title">Parrillada El Paisano</h4>
+        <div class="card-body">
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">R. Mal. Deodoro, 1093C - Centro, Pelotas - RS, 96020-220</li>
+            <li class="list-group-item"><b>segunda-feira</b> Fechado<br>
+                                        <b>terça-feira</b> 19:00-23:30<br>
+                                        <b>quarta-feira</b> 19:00-23:30<br>
+                                        <b>quinta-feira</b> 19:00-23:30<br>
+                                        <b>sexta-feira</b> 19:00-23:30<br>
+                                        <b>sábado</b> 19:00-23:30<br>
+                                        <b>domingo</b> 11:30-14:00, 19:00-23:30</li>
+            <li class="list-group-item"><b>Telefone:</b> (53) 3227-1507</li>
+          </ul>
+        </div>
+    </div>
+    <div id="card-turismo" class="card" style="width: 21rem; margin-top: 50px;">
+      <img class="card-img-top" src="imagens/grelhados-batuva.jpg" alt="Grelhados Batuva">
+      <h4 class="card-title">Grelhados Batuva</h4>
+        <div class="card-body">
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">R. Gen. Osório, 454 - Centro, Pelotas - RS, 96020-000</li>
+            <li class="list-group-item"><b>segunda-feira</b> 19:30–00:00<br>
+                                        <b>terça-feira</b> 19:30–00:00<br>
+                                        <b>quarta-feira</b> 19:30–00:00<br>
+                                        <b>quinta-feira</b> 19:30–00:00<br>
+                                        <b>sexta-feira</b> 19:30–00:00<br>
+                                        <b>sábado</b> 19:30–00:00<br>
+                                        <b>domingo</b> 12:00-14:30</li>
+            <li class="list-group-item"><b>Telefone:</b> (53) 3222-0101</li>
+          </ul>
+        </div>
+    </div>
+    <div id="card-turismo" class="card" style="width: 21rem; margin-top: 50px;">
+      <img class="card-img-top" src="imagens/Shanghay-sushi.jpg" alt="Shanghay Sushi Lounge">
+      <h4 class="card-title">Shanghay Sushi Lounge</h4>
+        <div class="card-body">
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">R. Mal. Deodoro, 1231 - Centro, Pelotas - RS, 96020-220</li>
+            <li class="list-group-item"><b>segunda-feira</b> Fechado<br>
+                                        <b>terça-feira</b> 11:30-14:00, 19:00-23:00<br>
+                                        <b>quarta-feira</b> 11:30-14:00, 19:00-23:00<br>
+                                        <b>quinta-feira</b> 11:30-14:00, 19:00-23:00<br>
+                                        <b>sexta-feira</b> 11:30-14:00, 19:00-23:00<br>
+                                        <b>sábado</b> 11:30-14:00, 19:00-23:00<br>
+                                        <b>domingo</b> 11:30-14:00, 19:00-23:00</li>
+            <li class="list-group-item"><b>Telefone:</b> (53) 3228-7601</li>
+          </ul>
+        </div>
+    </div>
+    <div id="card-turismo" class="card" style="width: 21rem; margin-right: 0; margin-top: 50px;">
+      <img class="card-img-top" src="imagens/trem-bao.jpg" alt="Trem Bão">
+      <h4 class="card-title">Trem Bão</h4>
+        <div class="card-body">
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">R. Gen. Osório, 461 - Centro, Pelotas - RS, 96020-000</li>
+            <li class="list-group-item"><b>segunda-feira</b> 11:30-14:00<br>
+                                        <b>terça-feira</b> 11:30-14:00<br>
+                                        <b>quarta-feira</b> 11:30-14:00<br>
+                                        <b>quinta-feira</b> 11:30-14:00<br>
+                                        <b>sexta-feira</b> 11:30-14:00<br>
+                                        <b>sábado</b> Fechado<br>
+                                        <b>domingo</b> Fechado</li>
+            <li class="list-group-item"><b>Telefone:</b> (53) 3272-2446</li>
+          </ul>
+        </div>
+    </div>
+    <div id="card-turismo" class="card" style="width: 21rem; margin-top: 50px;">
+      <img class="card-img-top" src="imagens/polo-norte.jpg" alt="Polo Norte">
+      <h4 class="card-title">Polo Norte</h4>
+        <div class="card-body">
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item"> R. Gen. Osório, 1380 - Centro, Pelotas - RS, 96020-000</li>
+            <li class="list-group-item"><b>segunda-feira</b> 11:00-14:00<br>
+                                        <b>terça-feira</b> 11:00-14:00<br>
+                                        <b>quarta-feira</b> 11:00-14:00<br>
+                                        <b>quinta-feira</b> 11:00-14:00<br>
+                                        <b>sexta-feira</b> 11:00-14:00<br>
+                                        <b>sábado</b> 11:00-14:00<br>
+                                        <b>domingo</b> 11:00-14:00</li>
+            <li class="list-group-item"><b>Telefone:</b> (53) 3227-3368</li>
+          </ul>
+        </div>
+    </div>
+    <div id="card-turismo" class="card" style="width: 21rem; margin-top: 50px;">
+      <img class="card-img-top" src="imagens/chu.jpg" alt="Chu">
+      <h4 class="card-title">Chu</h4>
+        <div class="card-body">
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">R. Andrade Neves, 3800 - Centro, Pelotas - RS, 96020-080</li>
+            <li class="list-group-item"><b>segunda-feira</b> Fechado<br>
+                                        <b>terça-feira</b> 19:00-00:00<br>
+                                        <b>quarta-feira</b> 19:00-00:00<br>
+                                        <b>quinta-feira</b> 19:00-00:00<br>
+                                        <b>sexta-feira</b> 19:00-00:00<br>
+                                        <b>sábado</b> 19:00-00:00<br>
+                                        <b>domingo</b> 19:00-00:00</li>
+            <li class="list-group-item"><b>Telefone:</b> (53) 3225-0250</li>
+          </ul>
+        </div>
+    </div>
+    <div id="card-turismo" class="card" style="width: 21rem; margin-top: 50px;">
+      <img class="card-img-top" src="imagens/cruz-de-malta2.jpg" alt="Choperia Cruz de Malta">
+      <h4 class="card-title">Choperia Cruz de Malta</h4>
+        <div class="card-body">
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">R. Andrade Neves, 4183 - Centro, Pelotas - RS, 96020-080</li>
+            <li class="list-group-item"><b>segunda-feira</b> 18:00-01:00<br>
+                                        <b>terça-feira</b> 18:00-01:00<br>
+                                        <b>quarta-feira</b> 18:00-01:00<br>
+                                        <b>quinta-feira</b> 18:00-01:00<br>
+                                        <b>sexta-feira</b> 18:00-01:00<br>
+                                        <b>sábado</b> 18:00-01:00<br>
+                                        <b>domingo</b> Fechado</li>
+            <li class="list-group-item"><b>Telefone:</b> (53) 3283-7702</li>
+          </ul>
+        </div>
+    </div>
+    <div id="card-turismo" class="card" style="width: 21rem; margin-right: 0; margin-top: 50px;">
+      <img class="card-img-top" src="imagens/madre-mia.jpg" alt="Madre Mia!">
+      <h4 class="card-title">Madre Mia!</h4>
+        <div class="card-body">
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">R. Santa Cruz, 2200 - Centro, Pelotas - RS, 96010-140</li>
+            <li class="list-group-item"><b>segunda-feira</b> 11:30-14:00<br>
+                                        <b>terça-feira</b> 11:30-14:00, 18:00-00:00<br>
+                                        <b>quarta-feira</b> 11:30-14:00, 18:00-00:00<br>
+                                        <b>quinta-feira</b> 11:30-14:00, 18:00-00:00<br>
+                                        <b>sexta-feira</b> 11:30-14:00, 18:00-02:00<br>
+                                        <b>sábado</b> 11:30-14:00, 18:00-02:00<br>
+                                        <b>domingo</b> 11:30-14:00, 18:00-00:00</li>
+            <li class="list-group-item"><b>Telefone:</b> (53) 3303-4075</li>
+          </ul>
+        </div>
+    </div>
+    <div id="card-turismo" class="card" style="width: 21rem; margin-top: 50px;">
+      <img class="card-img-top" src="imagens/ristorante-visuvio.jpg" alt="Ristorante Vesúvio">
+      <h4 class="card-title">Ristorante Vesúvio</h4>
+        <div class="card-body">
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">R. Marcílio Dias, 1090 - Centro, Pelotas - RS, 96020-480</li>
+            <li class="list-group-item"><b>segunda-feira</b> Fechado<br>
+                                        <b>terça-feira</b> 11:00-00:00<br>
+                                        <b>quarta-feira</b> 11:00-00:00<br>
+                                        <b>quinta-feira</b> 11:00-00:00<br>
+                                        <b>sexta-feira</b> 11:00-00:00<br>
+                                        <b>sábado</b> 11:00-00:00<br>
+                                        <b>domingo</b> 11:00-00:00</li>
+            <li class="list-group-item"><b>Telefone:</b> (53) 3222-6708</li>
+          </ul>
+        </div>
+    </div>
+    <div id="card-turismo" class="card" style="width: 21rem; margin-top: 50px;">
+      <img class="card-img-top" src="imagens/tio-hugo.jpg" alt="Tio Hugo">
+      <h4 class="card-title">Tio Hugo</h4>
+        <div class="card-body">
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">R. Prof. Dr. Araújo, 1907 - Centro, Pelotas - RS, 96020-360</li>
+            <li class="list-group-item"><b>segunda-feira</b> Fechado<br>
+                                        <b>terça-feira</b> 19:00-23:30<br>
+                                        <b>quarta-feira</b> 19:00-23:30<br>
+                                        <b>quinta-feira</b> 19:00-23:30<br>
+                                        <b>sexta-feira</b> 19:00-23:30<br>
+                                        <b>sábado</b> 11:30-15:50, 19:00-00:00<br>
+                                        <b>domingo</b> 11:30-15:30</li>
+            <li class="list-group-item"><b>Telefone:</b> (53) 3225-2292</li>
+          </ul>
+        </div>
+    </div>
+    <div id="card-turismo" class="card" style="width: 21rem; margin-top: 50px;">
+      <img class="card-img-top" src="imagens/tradicao.png" alt="Churrascaria Tradição">
+      <h4 class="card-title">Churrascaria Tradição</h4>
+        <div class="card-body">
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">R. Barão de Santa Tecla, 755 - Centro, Pelotas - RS, 96075-000</li>
+            <li class="list-group-item"><b>segunda-feira</b> 19:00-23:30<br>
+                                        <b>terça-feira</b> 00:00–14:30, 19:00–23:30<br>
+                                        <b>quarta-feira</b> 00:00–14:30, 19:00–23:30<br>
+                                        <b>quinta-feira</b> 00:00–14:30, 19:00–23:30<br>
+                                        <b>sexta-feira</b> 00:00–14:30, 19:00–23:30<br>
+                                        <b>sábado</b> 00:00–14:30, 19:00–23:30<br>
+                                        <b>domingo</b> 00:00–14:30, 19:00–23:30</li>
+            <li class="list-group-item"><b>Telefone:</b> (53) 3025-4040</li>
+          </ul>
+        </div>
+    </div>
+    <div id="card-turismo" class="card" style="width: 21rem; margin-right: 0; margin-top: 50px;">
+      <img class="card-img-top" src="imagens/mendes.jpg" alt="Mendes Refeições">
+      <h4 class="card-title">Mendes Refeições</h4>
+        <div class="card-body">
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">R. Dr. Arnaldo da Silva Ferreira, Ap 102 - Fragata, Pelotas - RS, 96040-050</li>
+            <li class="list-group-item"><b>segunda-feira</b> 11:00-14:30<br>
+                                        <b>terça-feira</b> 11:00-14:30<br>
+                                        <b>quarta-feira</b> 11:00-14:30<br>
+                                        <b>quinta-feira</b> 11:00-14:30<br>
+                                        <b>sexta-feira</b> 11:00-14:30<br>
+                                        <b>sábado</b> 11:00-14:30<br>
+                                        <b>domingo</b> Fechado</li>
+            <li class="list-group-item"><b>Telefone:</b> (53) 3221-3591</li>
           </ul>
         </div>
     </div>
